@@ -65,39 +65,37 @@ const {
 console.log({ previous_semester_CGPA });
 */
 // Array + Object
-const MyArrayData = [ // Depth 1: Array (Root)
+const MyData = [ 
     'User_Info_Block',
-    { // Depth 2: Object
+    { 
         userID: 1051,
-        academic: [ // Depth 3: Array
+        academic: [ 
             'CSE',
-            { // Depth 4: Object
+            { 
                 year: 2023,
-                grades: [ // Depth 5: Array 
-                    3.96 // The value we want to extract
+                grades: [ 
+                    3.96 
                 ]
             }
         ]
     }
 ];
 
-// Destructuring Process: Array -> Object -> Array -> Object -> Array
 const [
-    , // Skip 'User_Info_Block'
-    { // Entering Depth 2 (Object)
+    , 
+    {
         academic: [
-            , // Entering Depth 3 (Array)
-            { // Entering Depth 4 (Object)
-                grades: [ // Entering Depth 5 (Array)
-                    finalCGPA // Extracting the final value
+            , 
+            { 
+                grades: [ 
+                    previous_semester_CGPA 
                 ]
             }
         ]
     }
-] = MyArrayData;
+] = MyData;
 
-console.log({ finalCGPA });
-// Output: { finalCGPA: 3.96 }
+console.log({ previous_semester_CGPA });
 
 
 
