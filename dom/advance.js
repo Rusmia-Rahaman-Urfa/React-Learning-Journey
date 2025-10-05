@@ -7,7 +7,7 @@ console.log({name, university, department, city, country});
 */
 
 // Object Destructing up to 5 depths
-/* const user = {
+const user = {
   name: "Urfa",
   address: {
     city: "Cumilla",
@@ -29,7 +29,7 @@ console.log({name, university, department, city, country});
  const {name, address, education, department, current_status} = user;
 
  console.log({ name, address, education, department, current_status});
- */
+ 
 //  Combination Destructuring (5 Depths):
 // Object + Array
 /*const MyData = { 
@@ -65,8 +65,8 @@ const {
 console.log({ previous_semester_CGPA });
 */
 // Array + Object
-const MyData = [ 
-    'User_Info_Block',
+/*const MyData = [ 
+    "User_Info_Block",
     { 
         userID: 1051,
         academic: [ 
@@ -84,6 +84,7 @@ const MyData = [
 const [
     , 
     {
+        
         academic: [
             , 
             { 
@@ -96,6 +97,7 @@ const [
 ] = MyData;
 
 console.log({ previous_semester_CGPA });
+*/
 
 
 
